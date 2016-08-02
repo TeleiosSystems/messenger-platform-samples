@@ -257,7 +257,7 @@ function receivedMessage(event) {
     switch (messageText) {
       case 'fire emergency':
         //sendTextMessage(senderID, "The number for fire emergencies is 990 (in Trinidad and Tobago)");
-        sendButtonMessage(senderID, "+8686673571,");
+        sendButtonMessage(senderID, "+8686673571");
         break;
       case 'image':
         sendImageMessage(senderID);
