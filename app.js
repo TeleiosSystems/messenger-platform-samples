@@ -564,6 +564,8 @@ function sendFireStationButtons(recipientId, phoneForButton) {
       }
     }
   };  
+  callSendAPI(messageData);
+}
 
 /*
  * Send a button message using the Send API.
