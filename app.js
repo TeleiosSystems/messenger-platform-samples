@@ -548,9 +548,31 @@ function sendFireStationButtons(recipientId, phoneForButton) {
         payload: {
           template_type: "button",
           text: "Here are the fire stations in Trinidad and Tobago",
-          buttons:[ { type:'phone_number', title: 'Call Woodbrook Fire Station', payload: 'number: '+ '+18686223575'},
-                    { type: "phone_number", title: "Call Phone Number", payload: "number: "+phoneForButton },
-                    { type: "phone_number", title: "Call Phone Number", payload: "number: "+phoneForButton }]
+          buttons:[{ type:'phone_number', title: 'Call Woodbrook Fire Station', payload: 'number: '+ '+18686223575'},
+{ type:'phone_number', title: 'Call Belmont Fire Station', payload: 'number: '+ '+18686244222'},
+{ type:'phone_number', title: 'Call Fire Service Headquarters', payload: 'number: '+ '+18686252671'},
+{ type:'phone_number', title: 'Call Morvant Fire Station', payload: 'number: '+ '+18686258044'},
+{ type:'phone_number', title: 'Call Chaguaramas Fire Station', payload: 'number: '+ '+18686344344'},
+{ type:'phone_number', title: 'Call Couva Fire Station', payload: 'number: '+ '+18686362255'},
+{ type:'phone_number', title: 'Call Couva South Fire Station', payload: 'number: '+ '+18686364418'},
+{ type:'phone_number', title: 'Call Four Roads Fire Station', payload: 'number: '+ '+18686379222'},
+{ type:'phone_number', title: 'Call San Juan Fire Station', payload: 'number: '+ '+18686384053'},
+{ type:'phone_number', title: 'Call Scarborough Fire Station', payload: 'number: '+ '+18686391000'},
+{ type:'phone_number', title: 'Call Crown Point Fire Station', payload: 'number: '+ '+18686398556'},
+{ type:'phone_number', title: 'Call Rio Claro Fire Station', payload: 'number: '+ '+18686442232'},
+{ type:'phone_number', title: 'Call Point Fortin Fire Station', payload: 'number: '+ '+18686482245'},
+{ type:'phone_number', title: 'Call Siparia Fire Station', payload: 'number: '+ '+18686492222'},
+{ type:'phone_number', title: 'Call Southern Division Headquarters', payload: 'number: '+ '+18686522675'},
+{ type:'phone_number', title: 'Call ', payload: 'number: '+ '+18686522677'},
+{ type:'phone_number', title: 'Call Princess Town Fire Station', payload: 'number: '+ '+18686552222 '},
+{ type:'phone_number', title: 'Call Roxborough Fire Station', payload: 'number: '+ '+18686604369'},
+{ type:'phone_number', title: 'Call ', payload: 'number: '+ '+18686605100'},
+{ type:'phone_number', title: 'Call Tunapuna Fire Station', payload: 'number: '+ '+18686624707'},
+{ type:'phone_number', title: 'Call Central Division  Headquarters', payload: 'number: '+ '+18686655719'},
+{ type:'phone_number', title: 'Call ', payload: 'number: '+ '+18686655729'},
+{ type:'phone_number', title: 'Call Arima Fire Station', payload: 'number: '+ '+18686673571'},
+{ type:'phone_number', title: 'Call Piarco Fire Station', payload: 'number: '+ '+18686694678'},
+{ type:'phone_number', title: 'Call Santa Cruz Fire Station', payload: 'number: '+ '+18686760414'}]
         }
       }
     }
