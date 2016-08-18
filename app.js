@@ -537,6 +537,7 @@ function sendTextMessage(recipientId, messageText) {
 }
 
 function sendFireStationButtons(recipientId, phoneForButton) {
+  var fireStations= "";
   var messageData = {
     recipient: {
       id: recipientId
@@ -546,20 +547,10 @@ function sendFireStationButtons(recipientId, phoneForButton) {
         type: "template",
         payload: {
           template_type: "button",
-          text: "This is test text",
-          buttons:[{
-            type: "web_url",
-            url: "https://www.oculus.com/en-us/rift/",
-            title: "Open Web URL"
-          }, {
-            type: "postback",
-            title: "Trigger Postback",
-            payload: "DEVELOPED_DEFINED_PAYLOAD"
-          }, {
-            type: "phone_number",
-            title: "Call Phone Number",
-            payload: "number: "+phoneForButton
-          }]
+          text: "Here are the fire stations in Trinidad and Tobago",
+          buttons:[ { type:'phone_number', title: 'Call Woodbrook Fire Station', payload: number: 622-3575},
+                    { type: "phone_number", title: "Call Phone Number", payload: "number: "+phoneForButton },
+                    { type: "phone_number", title: "Call Phone Number", payload: "number: "+phoneForButton }]
         }
       }
     }
