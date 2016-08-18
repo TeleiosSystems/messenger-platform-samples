@@ -548,7 +548,7 @@ function sendFireStationButtons(recipientId, phoneForButton) {
         payload: {
           template_type: "button",
           text: "Here are the fire stations in Trinidad and Tobago",
-          buttons:[ { type:'phone_number', title: 'Call Woodbrook Fire Station', payload: number: 622-3575},
+          buttons:[ { type:'phone_number', title: 'Call Woodbrook Fire Station', payload: 'number: '+ 8686223575},
                     { type: "phone_number", title: "Call Phone Number", payload: "number: "+phoneForButton },
                     { type: "phone_number", title: "Call Phone Number", payload: "number: "+phoneForButton }]
         }
