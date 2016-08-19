@@ -548,16 +548,69 @@ function sendFireStationButtons(recipientId, phoneForButton) {
         payload: {
           template_type: "button",
           text: "Here are the fire stations in Trinidad and Tobago",
-          buttons:[
-{ type:'phone_number', title: 'Call Woodbrook Fire Station', payload: 'number: '+ '+18686223575'},
-{ type:'phone_number', title: 'Call Belmont Fire Station', payload: 'number: '+ '+18686244222'},
-{ type:'phone_number', title: 'Call Fire Service Headquarters', payload: 'number: '+ '+18686252671'}]
-        }
+          
+          buttons:[{
+            type: "postback",
+            title: "Nothern Division",
+            payload: {
+              template_type: "button",
+              text: "Firestations in Northern Division",
+              buttons:[{
+                type: "phone_number",
+                title: "Call Woodbrook Fire Station",
+                payload: 'number: '+ '+18686223575'
+              }]
+            }
+          }, 
+          
+          
+          {
+            type: "postback",
+            title: "Central Division",
+            payload: {
+              template_type: "button",
+              text: "Firestations in Central Division",
+              buttons:[{
+                type: "phone_number",
+                title: "Call Couva Fire Station",
+                payload: 'number: '+ '+18686362255'
+              }]
+          }, 
+          
+          
+          {
+            type: "postback",
+            title: "Southern Division",
+            payload: {
+              template_type: "button",
+              text: "Firestations in Southern Division",
+              buttons:[{
+                type: "phone_number",
+                title: "Call Siparia Fire Station",
+                payload: 'number: '+ '+18686492222'
+              }]
+          }, 
+          
+          {
+            type: "postback",
+            title: "Tobago Division",
+            payload: {
+              template_type: "button",
+              text: "Firestations in Tobago Division",
+              buttons:[{
+                type: "phone_number",
+                title: "Call Scarborough Fire Station",
+                payload: 'number: '+ '+18686391000'
+              }]
+          
+          
+          
       }
     }
   };  
   callSendAPI(messageData);
 }
+
 
 /*
  * Send a button message using the Send API.
